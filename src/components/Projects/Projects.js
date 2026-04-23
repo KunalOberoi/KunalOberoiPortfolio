@@ -2,13 +2,28 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
 import FMCG from "../../Assets/Projects/FMCG.png"
+import HEALTH from "../../Assets/Projects/HEALTH.png"
+import MARKETING from "../../Assets/Projects/MARKETING.png"
+import SEASONALSALES from "../../Assets/Projects/SEASONALSALES.png"
+import HOSPITALITY from "../../Assets/Projects/HOSPITALITY.png"
+import HILOS from "../../Assets/Projects/HILOS.png"
+import FOREVER from "../../Assets/Projects/FOREVER.png"
+import PORTFOLIO from "../../Assets/Projects/PORTFOLIO.png"
+import MUTUAL from "../../Assets/Projects/MUTUAL.png"
+import SALESTRENDS from "../../Assets/Projects/SALESTRENDS.png"
+import CHURN from "../../Assets/Projects/CHURN.png"
+import FINANCIAL from "../../Assets/Projects/FINANCIAL.png"
+
+
+
+
+
+
+
+
+
+
 
 function Projects() {
   return (
@@ -38,7 +53,7 @@ function Projects() {
 {/* Hospitality */}
 <Col md={4} className="project-card">
   <ProjectCard
-    imgPath={bitsOfCode}
+    imgPath={HOSPITALITY}
     isBlog={false}
     title="Revenue Analytics - Hospitality Domain"
     description="Built an interactive Power BI dashboard analyzing hotel revenue performance, occupancy rates, and booking patterns across properties. Performed data modeling to identify revenue leakage and optimize pricing strategies. Enabled stakeholders to make informed decisions that maximize occupancy and profitability in hospitality operations."
@@ -51,7 +66,7 @@ function Projects() {
 {/* Customer Churn */}
 <Col md={4} className="project-card">
   <ProjectCard
-    imgPath={leaf}
+    imgPath={CHURN}
     isBlog={false}
     title="Customer Churn Prediction & Analysis"
     description="Built predictive machine learning models using Python and Scikit-learn to identify high-risk churn customers. Applied feature engineering and classification techniques to uncover key churn drivers. Delivered insights enabling businesses to improve retention strategies and reduce customer attrition effectively."
@@ -64,7 +79,7 @@ function Projects() {
 {/* Financial */}
 <Col md={4} className="project-card">
   <ProjectCard
-    imgPath={suicide}
+    imgPath={FINANCIAL}
     isBlog={false}
     title="Financial Analytics - Banking"
     description="Performed comprehensive financial data analysis evaluating customer segmentation, transaction behavior, and risk indicators. Built dashboards tracking key KPIs and uncovering trends. Supported strategic decisions in lending, risk management, and customer lifecycle optimization for banking operations."
@@ -77,7 +92,7 @@ function Projects() {
 {/* Marketing */}
 <Col md={4} className="project-card">
   <ProjectCard
-    imgPath={chatify}
+    imgPath={MARKETING}
     isBlog={false}
     title="Marketing Campaign Performance Analysis"
     description="Analyzed multi-channel marketing campaigns evaluating ROI, conversion rates, and customer engagement metrics. Applied visualization techniques to identify high-performing channels and optimize targeting strategies. Delivered insights improving overall campaign effectiveness and marketing ROI."
@@ -90,7 +105,7 @@ function Projects() {
 {/* Sales Trends */}
 <Col md={4} className="project-card">
   <ProjectCard
-    imgPath={emotion}
+    imgPath={SALESTRENDS}
     isBlog={false}
     title="Customer Sales Trends Analysis"
     description="Analyzed large-scale sales datasets using Python and Jupyter Notebook to uncover purchasing patterns and seasonal trends. Generated data visualizations identifying revenue drivers. Supported business forecasting and strategic planning with actionable insights and trend analysis."
@@ -103,7 +118,7 @@ function Projects() {
 {/* Mutual Fund */}
 <Col md={4} className="project-card">
   <ProjectCard
-    imgPath={bitsOfCode}
+    imgPath={MUTUAL}
     isBlog={false}
     title="Mutual Fund Performance Analysis"
     description="Performed quantitative analysis on mutual fund datasets evaluating risk-adjusted returns, volatility, and portfolio performance. Utilized Python and visualization libraries to generate insights. Supported better investment decision-making through comprehensive performance analysis."
@@ -116,7 +131,7 @@ function Projects() {
 {/* Sales Analysis */}
 <Col md={4} className="project-card">
   <ProjectCard
-    imgPath={editor}
+    imgPath={SEASONALSALES}
     isBlog={false}
     title="Sales Data Analysis Dashboard"
     description="Developed a data analysis solution using Python tracking sales performance, product demand, and revenue trends. Generated visualizations identifying patterns and opportunities. Improved sales strategy and operational efficiency through comprehensive data-driven insights and analytics."
@@ -129,7 +144,7 @@ function Projects() {
 {/* E-commerce */}
 <Col md={4} className="project-card">
   <ProjectCard
-    imgPath={editor}
+    imgPath={FOREVER}
     isBlog={false}
     title="Full Stack E-commerce Platform"
     description="Engineered a scalable e-commerce application using the MERN stack (MongoDB, Express.js, React.js, Node.js). Implemented authentication, product catalog, cart functionality, and order management. Focused on performance optimization, security best practices, and enhanced user experience."
@@ -141,7 +156,7 @@ function Projects() {
 {/* MyPhysioFriend */}
 <Col md={4} className="project-card">
   <ProjectCard
-    imgPath={leaf}
+    imgPath={HEALTH}
     isBlog={false}
     title="MyPhysioFriend Healthcare Web App"
     description="Developed a healthcare-focused web application assisting users with physiotherapy exercises and recovery guidance. Designed an intuitive interface and structured content system. Enhanced user engagement and accessibility through thoughtful design and user-centric development practices."
@@ -153,7 +168,7 @@ function Projects() {
 {/* Portfolio */}
 <Col md={4} className="project-card">
   <ProjectCard
-    imgPath={emotion}
+    imgPath={PORTFOLIO}
     isBlog={false}
     title="Personal Portfolio Website"
     description="Designed a modern, responsive portfolio using React.js and Bootstrap showcasing technical projects and skills. Integrated GitHub repositories for portfolio management. Optimized UI/UX for recruiter engagement, seamless navigation, and professional presentation."
@@ -165,7 +180,7 @@ function Projects() {
 {/* Hilos */}
 <Col md={4} className="project-card">
   <ProjectCard
-    imgPath={chatify}
+    imgPath={HILOS}
     isBlog={false}
     title="Hilos Frontend Web Project"
     description="Built a responsive frontend web application using HTML, CSS, and JavaScript. Focused on clean design principles, accessibility standards, and cross-device compatibility. Delivered a professional user experience with semantic code and performance optimization."

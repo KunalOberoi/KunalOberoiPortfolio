@@ -8,6 +8,7 @@ import editor from "../../Assets/Projects/codeEditor.png";
 import chatify from "../../Assets/Projects/chatify.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
+import FMCG from "../../Assets/Projects/FMCG.png"
 
 function Projects() {
   return (
@@ -21,72 +22,158 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={chatify}
-              isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
-            />
-          </Col>
+{/* Supply Chain */}
+<Col md={4} className="project-card">
+  <ProjectCard
+    imgPath={FMCG}
+    isBlog={false}
+    title="Supply Chain Analytics - FMCG"
+    description="Developed an end-to-end supply chain analytics platform using SQL, Python, and Power BI. Analyzed critical logistics KPIs including OTIF and LIFR to identify operational bottlenecks. Delivered actionable insights that improved delivery performance and inventory optimization, enabling data-driven decision-making across FMCG operations."
+    ghLink="https://github.com/KunalOberoi/Supply-Chain-Analysis-in-FMCG-AtliQ-Mart"
+    demoLink="https://app.powerbi.com/groups/me/reports/c84f1798-e3ff-4b8d-b057-af5b585c7ff9/ReportSection7703fc56c5598583a34d?experience=power-bi"
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={bitsOfCode}
-              isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
-            />
-          </Col>
+  />
+</Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={editor}
-              isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
-            />
-          </Col>
+{/* Hospitality */}
+<Col md={4} className="project-card">
+  <ProjectCard
+    imgPath={bitsOfCode}
+    isBlog={false}
+    title="Revenue Analytics - Hospitality Domain"
+    description="Built an interactive Power BI dashboard analyzing hotel revenue performance, occupancy rates, and booking patterns across properties. Performed data modeling to identify revenue leakage and optimize pricing strategies. Enabled stakeholders to make informed decisions that maximize occupancy and profitability in hospitality operations."
+    ghLink="https://github.com/KunalOberoi/Revenue-Insights-In-Hospitality-Domain"
+    demoLink="https://app.powerbi.com/groups/me/reports/66f61fee-4d02-4730-ae59-59894a54bf37/ReportSection?experience=power-bi"
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={leaf}
-              isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
-            />
-          </Col>
+  />
+</Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
+{/* Customer Churn */}
+<Col md={4} className="project-card">
+  <ProjectCard
+    imgPath={leaf}
+    isBlog={false}
+    title="Customer Churn Prediction & Analysis"
+    description="Built predictive machine learning models using Python and Scikit-learn to identify high-risk churn customers. Applied feature engineering and classification techniques to uncover key churn drivers. Delivered insights enabling businesses to improve retention strategies and reduce customer attrition effectively."
+    ghLink="https://github.com/KunalOberoi/Customer-Churn-Analysis"
+    demoLink="https://app.powerbi.com/groups/me/reports/14845c48-5bd3-4d08-9ab5-9c1e7cab15fd/ReportSection?experience=power-bi"
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
-            />
-          </Col>
+  />
+</Col>
+
+{/* Financial */}
+<Col md={4} className="project-card">
+  <ProjectCard
+    imgPath={suicide}
+    isBlog={false}
+    title="Financial Analytics - Banking"
+    description="Performed comprehensive financial data analysis evaluating customer segmentation, transaction behavior, and risk indicators. Built dashboards tracking key KPIs and uncovering trends. Supported strategic decisions in lending, risk management, and customer lifecycle optimization for banking operations."
+    ghLink="https://github.com/KunalOberoi/Finincial-Insights-Bank-Analysis"
+    demoLink="https://app.powerbi.com/groups/me/reports/84a7d784-33b2-4a2d-98c2-6283ddcee449/ReportSection16f3f7361c56e96ae5a3?experience=power-bi"
+
+  />
+</Col>
+
+{/* Marketing */}
+<Col md={4} className="project-card">
+  <ProjectCard
+    imgPath={chatify}
+    isBlog={false}
+    title="Marketing Campaign Performance Analysis"
+    description="Analyzed multi-channel marketing campaigns evaluating ROI, conversion rates, and customer engagement metrics. Applied visualization techniques to identify high-performing channels and optimize targeting strategies. Delivered insights improving overall campaign effectiveness and marketing ROI."
+    ghLink="https://github.com/KunalOberoi/Marketing-Analysis"
+    demoLink="https://app.powerbi.com/groups/me/reports/81406fe0-1616-4de0-88e2-e2165d5d9506/ReportSection?experience=power-bi"
+
+  />
+</Col>
+
+{/* Sales Trends */}
+<Col md={4} className="project-card">
+  <ProjectCard
+    imgPath={emotion}
+    isBlog={false}
+    title="Customer Sales Trends Analysis"
+    description="Analyzed large-scale sales datasets using Python and Jupyter Notebook to uncover purchasing patterns and seasonal trends. Generated data visualizations identifying revenue drivers. Supported business forecasting and strategic planning with actionable insights and trend analysis."
+    ghLink="https://github.com/KunalOberoi/Customer-Sales-Trends-Analysis"
+    demoLink="https://app.powerbi.com/groups/me/reports/f48d657a-6c6f-4513-a146-4aacb0298f19/34af425ccd009a991436?experience=power-bi"
+
+  />
+</Col>
+
+{/* Mutual Fund */}
+<Col md={4} className="project-card">
+  <ProjectCard
+    imgPath={bitsOfCode}
+    isBlog={false}
+    title="Mutual Fund Performance Analysis"
+    description="Performed quantitative analysis on mutual fund datasets evaluating risk-adjusted returns, volatility, and portfolio performance. Utilized Python and visualization libraries to generate insights. Supported better investment decision-making through comprehensive performance analysis."
+    ghLink="https://github.com/KunalOberoi/Mutual-Fund-Analysis"
+    demoLink="https://app.powerbi.com/groups/me/reports/45dc39c1-bb21-49d0-9e37-1a3f325bbfaf/f91d1b6bca439b7306a1?experience=power-bi"
+
+  />
+</Col>
+
+{/* Sales Analysis */}
+<Col md={4} className="project-card">
+  <ProjectCard
+    imgPath={editor}
+    isBlog={false}
+    title="Sales Data Analysis Dashboard"
+    description="Developed a data analysis solution using Python tracking sales performance, product demand, and revenue trends. Generated visualizations identifying patterns and opportunities. Improved sales strategy and operational efficiency through comprehensive data-driven insights and analytics."
+    ghLink="https://github.com/KunalOberoi/SalesAnalysis"
+    demoLink="https://app.powerbi.com/groups/me/reports/bd771478-9073-49de-b3c3-fd107d06e0ab/1e5b9cc3a0ece80ddd60?experience=power-bi"
+
+  />
+</Col>
+
+{/* E-commerce */}
+<Col md={4} className="project-card">
+  <ProjectCard
+    imgPath={editor}
+    isBlog={false}
+    title="Full Stack E-commerce Platform"
+    description="Engineered a scalable e-commerce application using the MERN stack (MongoDB, Express.js, React.js, Node.js). Implemented authentication, product catalog, cart functionality, and order management. Focused on performance optimization, security best practices, and enhanced user experience."
+    ghLink="https://github.com/KunalOberoi/Full_Stack_Ecommerce"
+    demoLink="https://forever-rho-eight.vercel.app/"
+  />
+</Col>
+
+{/* MyPhysioFriend */}
+<Col md={4} className="project-card">
+  <ProjectCard
+    imgPath={leaf}
+    isBlog={false}
+    title="MyPhysioFriend Healthcare Web App"
+    description="Developed a healthcare-focused web application assisting users with physiotherapy exercises and recovery guidance. Designed an intuitive interface and structured content system. Enhanced user engagement and accessibility through thoughtful design and user-centric development practices."
+    ghLink="https://github.com/KunalOberoi/MyPhysioFriend"
+    demoLink="https://my-physio-friend.vercel.app/"
+  />
+</Col>
+
+{/* Portfolio */}
+<Col md={4} className="project-card">
+  <ProjectCard
+    imgPath={emotion}
+    isBlog={false}
+    title="Personal Portfolio Website"
+    description="Designed a modern, responsive portfolio using React.js and Bootstrap showcasing technical projects and skills. Integrated GitHub repositories for portfolio management. Optimized UI/UX for recruiter engagement, seamless navigation, and professional presentation."
+    ghLink="https://github.com/KunalOberoi/KunalOberoiPortfolio"
+    demoLink="https://kunaloberoiportfolio.vercel.app/"
+  />
+</Col>
+
+{/* Hilos */}
+<Col md={4} className="project-card">
+  <ProjectCard
+    imgPath={chatify}
+    isBlog={false}
+    title="Hilos Frontend Web Project"
+    description="Built a responsive frontend web application using HTML, CSS, and JavaScript. Focused on clean design principles, accessibility standards, and cross-device compatibility. Delivered a professional user experience with semantic code and performance optimization."
+    ghLink="https://github.com/KunalOberoi/Hilos"
+    demoLink="https://hilos-theta.vercel.app/"
+  />
+</Col>
+       
         </Row>
       </Container>
     </Container>
